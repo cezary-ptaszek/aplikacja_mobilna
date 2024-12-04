@@ -42,6 +42,12 @@ android {
 
 dependencies {
 
+    implementation("org.osmdroid:osmdroid-android:6.1.10")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("androidx.fragment:fragment-ktx:1.5.4")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.Projektowaniemobilne" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Projektowaniemobilne" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="colorPrimary">#008000</item>
+    </style>
 </resources>

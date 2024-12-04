@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.projektowanie_mobilne.databinding.ActivityMainBinding
-import com.example.projektowanie_mobilne.fragments.GalleryFragment
+import com.example.projektowanie_mobilne.fragments.gallery.GalleryFragment
 import com.example.projektowanie_mobilne.fragments.LocationFragment
 import com.example.projektowanie_mobilne.fragments.MusicFragment
 

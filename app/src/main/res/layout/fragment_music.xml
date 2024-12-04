@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Tytuł muzyki -->
     <TextView
         android:id="@+id/musicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Music Player"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+        android:text="@string/title"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
 
-    <Button
-        android:id="@+id/playButton"
+    <!-- Czas trwania -->
+    <TextView
+        android:id="@+id/musicDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time"
+        android:textSize="14sp"
+        android:layout_gravity="center"/>
+
+    <!-- Przyciski przełączania -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
 
-    <Button
-        android:id="@+id/pauseButton"
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:enabled="true"/>
+    </LinearLayout>
+
+    <!-- Przyciski -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pause"
-        android:layout_marginBottom="8dp" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
 
-    <Button
-        android:id="@+id/stopButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Stop" />
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:enabled="false"/>
+    </LinearLayout>
+
 
 </LinearLayout>
